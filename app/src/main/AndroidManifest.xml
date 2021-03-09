@@ -13,16 +13,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UberEatsSim">
-        <activity
-            android:name=".ListaActivity"
-            android:label="@string/title_activity_lista">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
         <!--
                Set to true if your app is Standalone, that is, it does not require the handheld
                app to run.
@@ -32,8 +22,8 @@
             android:value="true" />
 
         <activity
-            android:name=".Lista"
-            android:label="@string/title_activity_lista">
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,8 +31,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SplashScreen"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:name=".ListaActivity"
+            android:label="@string/title_activity_lista">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
