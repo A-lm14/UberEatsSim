@@ -1,5 +1,6 @@
 package edu.itesm.ubereatssim
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
@@ -92,6 +93,9 @@ class MainActivity : AppCompatActivity() {
             deliveryFeeVal = 0.0
             editDeliveryFee.text = "$" + deliveryFeeVal.toString()
             finalPrice = 0.0
+
+            val datoLista = Intent(this, ListaActivity::class.java)
+            startActivity(datoLista)
         }
 
     }
